@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost/database-name', {
   reconnectTries: Number.MAX_VALUE
 });
 
-// OR when using provess.env to get ready for deploy
+// OR when using process.env to get ready for deploy
 
 mongoose.connect(process.env.MONGODB_URI, {
   keepAlive: true,
